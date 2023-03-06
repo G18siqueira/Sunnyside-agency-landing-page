@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--dark-moderate-cyan);
+    padding: 4rem 0;
+
+    @media (min-width: 768px) {
+        padding: 4.625rem 0;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

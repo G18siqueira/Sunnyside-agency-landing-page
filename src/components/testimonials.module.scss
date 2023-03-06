@@ -1,0 +1,89 @@
+.testimonials {
+    padding: 4.25rem 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        padding: 10.4375rem 0;
+    }
+
+    h1 {
+        color: var(--grayish-blue);
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: .4rem;
+        font-size: 1.2rem;
+    }
+
+    .content {
+        display: grid;
+        justify-content: center;
+        gap: 60px 0;
+        margin: 4.25rem 0 0;
+        grid-template-columns: repeat(1, 310px);
+
+        @media (min-width: 992px) {
+            grid-template-columns: repeat(3, 300px);
+            gap: 0 45px;
+        }
+
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(3, 340px);
+            gap: 0 45px;
+        }
+
+        .people {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: 968px) {
+                max-width: initial;
+            }
+        }
+
+        .image {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 0 2.75rem;
+
+            @media (min-width: 768px) {
+                margin: 0 0 4rem;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .text {
+            font-weight: 600;
+            margin: 0 0 2.75rem;
+
+            @media (min-width: 768px) {
+                margin: 0 0 5rem;
+            }
+
+            p {
+                color: var(--very-dark-grayish-blue);
+            }
+        }
+
+        .name {
+            h3 {
+                font-weight: 900;
+                font-size: 1.2rem;
+                color: var(--very-dark-blue);
+            }
+
+            p {
+                color: var(--grayish-blue);
+                font-size: .8rem;
+                font-weight: 900;
+            }
+        }
+    }
+}
