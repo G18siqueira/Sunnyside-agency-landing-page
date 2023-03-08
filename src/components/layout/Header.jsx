@@ -42,34 +42,34 @@ const Header = () => {
 		<header className={`${styles.header} `}>
 			<div className={`container ${styles.container}`}>
 				<div className={styles.logo}>
-					<LinkNav aria-label="link" href="/#">
+					<LinkNav ariaLabel="link" href="/#">
 						<Image src={LogoImg} alt="logo" />
 					</LinkNav>
 				</div>
 				<nav className={navVisible}>
 					<LinkNav
-						aria-label="link"
+						ariaLabel="link"
 						onClick={() => setToggle(false)}
 						href="/#grid"
 					>
 						About
 					</LinkNav>
 					<LinkNav
-						aria-label="link"
+						ariaLabel="link"
 						onClick={() => setToggle(false)}
 						href="/#"
 					>
 						Services
 					</LinkNav>
 					<LinkNav
-						aria-label="link"
+						ariaLabel="link"
 						onClick={() => setToggle(false)}
 						href="/#"
 					>
 						Projects
 					</LinkNav>
 					<LinkNav
-						aria-label="link"
+						ariaLabel="link"
 						onClick={() => setToggle(false)}
 						className={styles.linkContact}
 						href="/#"

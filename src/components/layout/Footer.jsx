@@ -23,27 +23,27 @@ const Footer = () => {
 						<Image src={LogoImg} alt="logo" />
 					</div>
 					<nav>
-						<LinkNav aria-label="link" href="/#grid">
+						<LinkNav ariaLabel="link" href="/#grid">
 							About
 						</LinkNav>
-						<LinkNav aria-label="link" href="/#">
+						<LinkNav ariaLabel="link" href="/#">
 							Services
 						</LinkNav>
-						<LinkNav aria-label="link" href="/#">
+						<LinkNav ariaLabel="link" href="/#">
 							Projects
 						</LinkNav>
 					</nav>
 					<div className={styles.social}>
-						<LinkNav aria-label="link" href="/#">
+						<LinkNav ariaLabel="link" href="/#">
 							<AiFillFacebook />
 						</LinkNav>
-						<LinkNav aria-label="link" href="/#">
+						<LinkNav ariaLabel="link" href="/#">
 							<AiOutlineInstagram />
 						</LinkNav>
-						<LinkNav aria-label="link" href="/#">
+						<LinkNav ariaLabel="link" href="/#">
 							<AiOutlineTwitter />
 						</LinkNav>
-						<LinkNav aria-label="link" href="/#">
+						<LinkNav ariaLabel="link" href="/#">
 							<BsPinterest />
 						</LinkNav>
 					</div>
