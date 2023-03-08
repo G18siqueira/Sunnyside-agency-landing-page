@@ -29,7 +29,7 @@ const Grid = () => {
 								your clients through compelling visuals that do
 								most of the marketing for you.
 							</p>
-							<Link className={styles.underlineYellow} href="/#">
+							<Link className={styles.underlineYellow} href="/#" aria-label='link'>
 								Learn more
 							</Link>
 						</div>
@@ -62,7 +62,7 @@ const Grid = () => {
 								copywriters, we'll build and extend your brand
 								in digital places.
 							</p>
-							<Link className={styles.underlineRed} href="/#">
+							<Link className={styles.underlineRed} href="/#" aria-label='link'>
 								Learn more
 							</Link>
 						</div>

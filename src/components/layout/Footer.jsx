@@ -20,24 +20,30 @@ const Footer = () => {
 			<div className="container">
 				<div className={styles.content}>
 					<div className={styles.logo}>
-						<Image src={LogoImg} alt='logo'/>
+						<Image src={LogoImg} alt="logo" />
 					</div>
 					<nav>
-						<LinkNav href="/#grid">About</LinkNav>
-						<LinkNav href="/#">Services</LinkNav>
-						<LinkNav href="/#">Projects</LinkNav>
+						<LinkNav aria-label="link" href="/#grid">
+							About
+						</LinkNav>
+						<LinkNav aria-label="link" href="/#">
+							Services
+						</LinkNav>
+						<LinkNav aria-label="link" href="/#">
+							Projects
+						</LinkNav>
 					</nav>
 					<div className={styles.social}>
-						<LinkNav href="/#">
+						<LinkNav aria-label="link" href="/#">
 							<AiFillFacebook />
 						</LinkNav>
-						<LinkNav href="/#">
+						<LinkNav aria-label="link" href="/#">
 							<AiOutlineInstagram />
 						</LinkNav>
-						<LinkNav href="/#">
+						<LinkNav aria-label="link" href="/#">
 							<AiOutlineTwitter />
 						</LinkNav>
-						<LinkNav href="/#">
+						<LinkNav aria-label="link" href="/#">
 							<BsPinterest />
 						</LinkNav>
 					</div>

@@ -25,6 +25,7 @@ const Intro = () => {
 					<Image
 						src={IntroImageDesk}
 						className={`animation animation--zoomIn`}
+						alt="intro"
 					/>
 				</picture>
 			</div>
