@@ -28,7 +28,7 @@ const FooterGrid = () => {
 							media="(min-width: 769px)"
 							srcSet={ImageGrid1}
 						/>
-						<Image src={ImageGrid1} />
+						<Image src={ImageGrid1} alt='grid'/>
 					</picture>
 				</div>
 
@@ -44,7 +44,7 @@ const FooterGrid = () => {
 							media="(min-width: 769px)"
 							srcSet={ImageGrid2}
 						/>
-						<Image src={ImageGrid2} />
+						<Image src={ImageGrid2} alt='grid'/>
 					</picture>
 				</div>
 				<div
@@ -59,7 +59,7 @@ const FooterGrid = () => {
 							media="(min-width: 769px)"
 							srcSet={ImageGrid3}
 						/>
-						<Image src={ImageGrid3} />
+						<Image src={ImageGrid3} alt='grid'/>
 					</picture>
 				</div>
 
@@ -75,7 +75,7 @@ const FooterGrid = () => {
 							media="(min-width: 769px)"
 							srcSet={ImageGrid4}
 						/>
-						<Image src={ImageGrid4} />
+						<Image src={ImageGrid4} alt='grid'/>
 					</picture>
 				</div>
 			</div>

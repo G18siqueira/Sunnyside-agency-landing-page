@@ -29,7 +29,7 @@ const Grid = () => {
 								your clients through compelling visuals that do
 								most of the marketing for you.
 							</p>
-							<Link className={styles.underlineYellow} href="/">
+							<Link className={styles.underlineYellow} href="/#">
 								Learn more
 							</Link>
 						</div>
@@ -39,7 +39,7 @@ const Grid = () => {
 						className={`${styles.gridItem} animation animation--from-right`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid1} />
+							<Image src={ImageGrid1} alt='grid'/>
 						</div>
 					</div>
 
@@ -47,7 +47,7 @@ const Grid = () => {
 						className={`${styles.gridItem} animation animation--from-left`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid2} />
+							<Image src={ImageGrid2} alt='grid'/>
 						</div>
 					</div>
 
@@ -62,7 +62,7 @@ const Grid = () => {
 								copywriters, we'll build and extend your brand
 								in digital places.
 							</p>
-							<Link className={styles.underlineRed} href="/">
+							<Link className={styles.underlineRed} href="/#">
 								Learn more
 							</Link>
 						</div>
@@ -72,7 +72,7 @@ const Grid = () => {
 						className={`${styles.gridItem} ${styles.gridItemCustom} animation animation--from-top`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid3} />
+							<Image src={ImageGrid3} alt='grid'/>
 						</div>
 
 						<div className={`${styles.block} ${styles.colorA}`}>
@@ -89,7 +89,7 @@ const Grid = () => {
 						className={`${styles.gridItem} ${styles.gridItemCustom} animation animation--from-bottom`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid4} />
+							<Image src={ImageGrid4} alt='grid'/>
 						</div>
 
 						<div className={`${styles.block} ${styles.colorB}`}>

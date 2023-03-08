@@ -20,7 +20,7 @@ const Footer = () => {
 			<div className="container">
 				<div className={styles.content}>
 					<div className={styles.logo}>
-						<Image src={LogoImg} />
+						<Image src={LogoImg} alt='logo'/>
 					</div>
 					<nav>
 						<LinkNav href="/#grid">About</LinkNav>
@@ -28,16 +28,16 @@ const Footer = () => {
 						<LinkNav href="/#">Projects</LinkNav>
 					</nav>
 					<div className={styles.social}>
-						<LinkNav href="/">
+						<LinkNav href="/#">
 							<AiFillFacebook />
 						</LinkNav>
-						<LinkNav href="/">
+						<LinkNav href="/#">
 							<AiOutlineInstagram />
 						</LinkNav>
-						<LinkNav href="/">
+						<LinkNav href="/#">
 							<AiOutlineTwitter />
 						</LinkNav>
-						<LinkNav href="/">
+						<LinkNav href="/#">
 							<BsPinterest />
 						</LinkNav>
 					</div>

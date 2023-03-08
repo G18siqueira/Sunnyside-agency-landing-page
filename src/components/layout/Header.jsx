@@ -42,8 +42,8 @@ const Header = () => {
 		<header className={`${styles.header} `}>
 			<div className={`container ${styles.container}`}>
 				<div className={styles.logo}>
-					<LinkNav href="/">
-						<Image src={LogoImg} />
+					<LinkNav href="/#">
+						<Image src={LogoImg} alt="logo" />
 					</LinkNav>
 				</div>
 				<nav className={navVisible}>
