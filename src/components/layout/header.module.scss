@@ -1,7 +1,127 @@
 .header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 10;
+    background-color: var(--blue);
+    transition: all .2s cubic-bezier(.535, 0, 0, 1);
+    transform: translateY(0);
 
-    
+    &:has(.navShow) {
+        &.scrollHide {
+            transform: translateY(0);
+        }
+    }
+
+    &.scrollHide {
+        transform: translateY(-5rem);
+    }
+
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        gap: 1.5rem;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--blue);
+        top: 0;
+        left: 0;
+        transition: all .5s cubic-bezier(.535, 0, 0, 1);
+
+        @media (min-width: 992px) {
+            position: initial;
+            justify-content: flex-end;
+            flex-direction: row;
+            height: 100%;
+        }
+
+        &.navShow {
+            transform: translateY(0);
+        }
+
+        &.navHide {
+            transform: translateY(-100vh);
+
+            @media (min-width: 992px) {
+                transform: translateY(0);
+            }
+        }
+
+        a {
+            color: #fff;
+            margin: 0 0 0 1rem;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 2px;
+                background-color: var(--white);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: all .2s cubic-bezier(.535, 0, 0, 1);
+            }
+
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &.linkContact {
+                padding: 0.9375rem 1.25rem;
+                font-family: var(--fontFraunces);
+                text-transform: uppercase;
+                font-weight: bold;
+                background-color: var(--white);
+                color: var(--dark-cyan);
+                border-radius: 50px;
+                transition: all .2s cubic-bezier(.535, 0, 0, 1);
+
+                &::before {
+                    display: none;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, .3);
+                    color: var(--white);
+                }
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: 22px;
+            right: 12px;
+        }
+    }
+
+    .btn {
+        padding: 5px;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+
+        svg {
+            font-size: 2.2rem;
+        }
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
 }

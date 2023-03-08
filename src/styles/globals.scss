@@ -1,15 +1,18 @@
 @import 'bs-components.scss';
+@import 'animation.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,700;9..144,900&display=swap');
 
 :root {
   scroll-behavior: smooth !important;
 
+  --blue: hsl(200, 100%, 62%);
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
   --dark-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
   --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --dark-moderate-cyan2: hsl(166.8, 44.2%, 69.8%);
 
   --very-dark-blue: hsl(212, 27%, 19%);
   --very-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -44,9 +47,9 @@
 }
 
 html,
-body,
-main {
+body {
   font-family: var(--fontBarlow);
+  overflow-x: hidden;
 }
 
 body {

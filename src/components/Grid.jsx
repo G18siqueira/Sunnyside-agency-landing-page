@@ -1,4 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
+
+import { useEffect } from 'react';
+import useAnimationScroll from './hooks/useAnimationScroll';
 
 import ImageGrid1 from '/public/assets/general/image-transform.jpg';
 import ImageGrid2 from '/public/assets/general/image-stand-out.jpg';
@@ -8,12 +12,14 @@ import ImageGrid4 from '/public/assets/general/image-photography.jpg';
 import styles from './grid.module.scss';
 
 const Grid = () => {
+	useAnimationScroll();
+
 	return (
 		<section className={styles.grid} id="grid">
 			<div className="container-custom">
 				<div className={styles.content}>
 					<div
-						className={`${styles.gridItem} ${styles.gridItemText}`}
+						className={`${styles.gridItem} ${styles.gridItemText} animation animation--from-left `}
 					>
 						<div className={styles.block}>
 							<h3>Transform your brand</h3>
@@ -23,24 +29,30 @@ const Grid = () => {
 								your clients through compelling visuals that do
 								most of the marketing for you.
 							</p>
-							<a>Learn more</a>
+							<Link className={styles.underlineYellow} href="/">
+								Learn more
+							</Link>
 						</div>
 					</div>
 
-					<div className={styles.gridItem}>
+					<div
+						className={`${styles.gridItem} animation animation--from-right`}
+					>
 						<div className={styles.image}>
 							<Image src={ImageGrid1} />
 						</div>
 					</div>
 
-					<div className={styles.gridItem}>
+					<div
+						className={`${styles.gridItem} animation animation--from-left`}
+					>
 						<div className={styles.image}>
 							<Image src={ImageGrid2} />
 						</div>
 					</div>
 
 					<div
-						className={`${styles.gridItem} ${styles.gridItemText}`}
+						className={`${styles.gridItem} ${styles.gridItemText} animation animation--from-right`}
 					>
 						<div className={styles.block}>
 							<h3>Stand out to the right audience</h3>
@@ -50,12 +62,14 @@ const Grid = () => {
 								copywriters, we'll build and extend your brand
 								in digital places.
 							</p>
-							<a>Learn more</a>
+							<Link className={styles.underlineRed} href="/">
+								Learn more
+							</Link>
 						</div>
 					</div>
 
 					<div
-						className={`${styles.gridItem} ${styles.gridItemCustom}`}
+						className={`${styles.gridItem} ${styles.gridItemCustom} animation animation--from-top`}
 					>
 						<div className={styles.image}>
 							<Image src={ImageGrid3} />
@@ -72,7 +86,7 @@ const Grid = () => {
 					</div>
 
 					<div
-						className={`${styles.gridItem} ${styles.gridItemCustom}`}
+						className={`${styles.gridItem} ${styles.gridItemCustom} animation animation--from-bottom`}
 					>
 						<div className={styles.image}>
 							<Image src={ImageGrid4} />

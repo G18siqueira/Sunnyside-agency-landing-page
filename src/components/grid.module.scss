@@ -101,13 +101,47 @@
             }
 
             a {
+                display: inline-flex;
+                justify-content: center;
                 font-family: var(--fontFraunces);
                 font-weight: bold;
                 text-transform: uppercase;
                 font-size: 1.1rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: calc(100% + 10px);
+                    height: 10px;
+                    border-radius: 50px;
+                    position: absolute;
+                    bottom: 0;
+                    opacity: .5;
+                    z-index: -1;
+                    transition: all .3s cubic-bezier(.535, 0, 0, 1);
+                }
+
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                        transform: translateX(5px);
+                    }
+                }
 
                 @media (min-width: 768px) {
                     font-size: 1rem;
+                }
+
+                &.underlineYellow {
+                    &::before {
+                        background-color: var(--yellow);
+                    }
+                }
+
+                &.underlineRed {
+                    &::before {
+                        background-color: var(--soft-red);
+                    }
                 }
             }
 

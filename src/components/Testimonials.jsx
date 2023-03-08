@@ -1,18 +1,22 @@
 import styles from './testimonials.module.scss';
-
 import Image from 'next/image';
+import useAnimationScroll from './hooks/useAnimationScroll';
 
 import PhotoImage1 from '/public/assets/peoples/image-emily.jpg';
 import PhotoImage2 from '/public/assets/peoples/image-thomas.jpg';
 import PhotoImage3 from '/public/assets/peoples/image-jennie.jpg';
 
 const Testimonials = () => {
+	useAnimationScroll();
+
 	return (
 		<section className={styles.testimonials}>
 			<div className="container">
 				<h1>Client Testimonials</h1>
 				<div className={styles.content}>
-					<div className={styles.people}>
+					<div
+						className={`${styles.people} animation animation--from-left`}
+					>
 						<div className={styles.image}>
 							<Image src={PhotoImage1} />
 						</div>
@@ -29,7 +33,9 @@ const Testimonials = () => {
 						</div>
 					</div>
 
-					<div className={styles.people}>
+					<div
+						className={`${styles.people} animation animation--zoomIn`}
+					>
 						<div className={styles.image}>
 							<Image src={PhotoImage2} />
 						</div>
@@ -46,7 +52,9 @@ const Testimonials = () => {
 						</div>
 					</div>
 
-					<div className={styles.people}>
+					<div
+						className={`${styles.people} animation animation--from-right`}
+					>
 						<div className={styles.image}>
 							<Image src={PhotoImage3} />
 						</div>

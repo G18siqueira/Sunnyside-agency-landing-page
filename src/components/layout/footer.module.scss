@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--dark-moderate-cyan);
+    background-color: var(--dark-moderate-cyan2);
     padding: 4rem 0;
 
     @media (min-width: 768px) {
@@ -10,5 +10,58 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .logo {
+        margin: 0 0 3rem;
+
+        svg {
+            fill: #000;
+        }
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 22px;
+        margin: 0 0 5.625rem;
+
+        a {
+            text-align: center;
+            color: var(--dark-cyan);
+            transition: all .2s cubic-bezier(.535, 0, 0, 1);
+
+            &:hover {
+                color: var(--white);
+            }
+        }
+    }
+
+    .social {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0 27px;
+
+        a {
+            color: var(--dark-cyan);
+
+            transition: all .2s cubic-bezier(.535, 0, 0, 1);
+
+            &:hover {
+                color: var(--white);
+            }
+
+            svg {
+                font-size: 26px;
+
+            }
+
+            &:last-child {
+                svg {
+                    font-size: 23px;
+
+                }
+            }
+        }
     }
 }
