@@ -32,7 +32,7 @@ const Intro = () => {
 
 			<div className={styles.infos}>
 				<h1>We Are Creatives</h1>
-				<a href="#grid">
+				<a aria-label="link" href="#grid">
 					<HiOutlineArrowNarrowDown />
 				</a>
 			</div>
