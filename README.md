@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/G18siqueira/Sunnyside-agency-landing-page)
+-   Solution URL: [GitHub](https://github.com/G18siqueira/Sunnyside-agency-landing-page)
 -   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
