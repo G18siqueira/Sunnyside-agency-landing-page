@@ -22,14 +22,18 @@ const Grid = () => {
 						className={`${styles.gridItem} ${styles.gridItemText} animation animation--from-left `}
 					>
 						<div className={styles.block}>
-							<h3>Transform your brand</h3>
+							<h2>Transform your brand</h2>
 							<p>
 								We are a full-service creative agency
 								specializing in helping brands grow fast. Engage
 								your clients through compelling visuals that do
 								most of the marketing for you.
 							</p>
-							<Link className={styles.underlineYellow} href="/#" aria-label='link'>
+							<Link
+								className={styles.underlineYellow}
+								href="/#"
+								aria-label="link"
+							>
 								Learn more
 							</Link>
 						</div>
@@ -39,7 +43,7 @@ const Grid = () => {
 						className={`${styles.gridItem} animation animation--from-right`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid1} alt='grid'/>
+							<Image src={ImageGrid1} alt="grid" />
 						</div>
 					</div>
 
@@ -47,7 +51,7 @@ const Grid = () => {
 						className={`${styles.gridItem} animation animation--from-left`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid2} alt='grid'/>
+							<Image src={ImageGrid2} alt="grid" />
 						</div>
 					</div>
 
@@ -55,14 +59,18 @@ const Grid = () => {
 						className={`${styles.gridItem} ${styles.gridItemText} animation animation--from-right`}
 					>
 						<div className={styles.block}>
-							<h3>Stand out to the right audience</h3>
+							<h2>Stand out to the right audience</h2>
 							<p>
 								Using a collaborative formula of designers,
 								researchers, photographers, videographers, and
 								copywriters, we'll build and extend your brand
 								in digital places.
 							</p>
-							<Link className={styles.underlineRed} href="/#" aria-label='link'>
+							<Link
+								className={styles.underlineRed}
+								href="/#"
+								aria-label="link"
+							>
 								Learn more
 							</Link>
 						</div>
@@ -72,7 +80,7 @@ const Grid = () => {
 						className={`${styles.gridItem} ${styles.gridItemCustom} animation animation--from-top`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid3} alt='grid'/>
+							<Image src={ImageGrid3} alt="grid" />
 						</div>
 
 						<div className={`${styles.block} ${styles.colorA}`}>
@@ -89,7 +97,7 @@ const Grid = () => {
 						className={`${styles.gridItem} ${styles.gridItemCustom} animation animation--from-bottom`}
 					>
 						<div className={styles.image}>
-							<Image src={ImageGrid4} alt='grid'/>
+							<Image src={ImageGrid4} alt="grid" />
 						</div>
 
 						<div className={`${styles.block} ${styles.colorB}`}>

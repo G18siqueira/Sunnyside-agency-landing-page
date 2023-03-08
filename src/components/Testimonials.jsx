@@ -18,7 +18,7 @@ const Testimonials = () => {
 						className={`${styles.people} animation animation--from-left`}
 					>
 						<div className={styles.image}>
-							<Image src={PhotoImage1} alt='photo'/>
+							<Image src={PhotoImage1} alt="photo" />
 						</div>
 						<div className={styles.text}>
 							<p>
@@ -28,7 +28,7 @@ const Testimonials = () => {
 							</p>
 						</div>
 						<div className={styles.name}>
-							<h3>Emily R.</h3>
+							<h2>Emily R.</h2>
 							<p>Marketing Director</p>
 						</div>
 					</div>
@@ -37,7 +37,7 @@ const Testimonials = () => {
 						className={`${styles.people} animation animation--zoomIn`}
 					>
 						<div className={styles.image}>
-							<Image src={PhotoImage2} alt='photo'/>
+							<Image src={PhotoImage2} alt="photo" />
 						</div>
 						<div className={styles.text}>
 							<p>
@@ -47,7 +47,7 @@ const Testimonials = () => {
 							</p>
 						</div>
 						<div className={styles.name}>
-							<h3>Thomas S.</h3>
+							<h2>Thomas S.</h2>
 							<p>Chief Operating</p>
 						</div>
 					</div>
@@ -56,7 +56,7 @@ const Testimonials = () => {
 						className={`${styles.people} animation animation--from-right`}
 					>
 						<div className={styles.image}>
-							<Image src={PhotoImage3} alt='photo'/>
+							<Image src={PhotoImage3} alt="photo" />
 						</div>
 						<div className={styles.text}>
 							<p>
@@ -66,7 +66,7 @@ const Testimonials = () => {
 							</p>
 						</div>
 						<div className={styles.name}>
-							<h3>Jennie F.</h3>
+							<h2>Jennie F.</h2>
 							<p>Business Owner</p>
 						</div>
 					</div>
